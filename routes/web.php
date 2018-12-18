@@ -13,4 +13,13 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
+
+
+Route::get('/weather', 'WeatherController@index')->name('weather');
+
+Route::get('/orders', 'OrderController@index')->name('orders');
+
+Route::get('/order/{id}', 'OrderController@order')->name('order');
+
+Route::post('/order/save', 'OrderController@save')->name('save');
