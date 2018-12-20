@@ -1,6 +1,6 @@
 
 ## Настройка проекта
-Для Laravel:
+
 - `composer install`
 - настроить `.env` файл
 - `php artisan key:generate`
